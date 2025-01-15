@@ -94,7 +94,7 @@ class AIGym(BaseSolution):
                 # Determine stage and count logic based on angle thresholds
                 if self.angle[ind] < self.down_angle:
                     if self.stage[ind] == "up":
-                        self.count[ind] += 1
+                        self.count[ind] += 2
                     self.stage[ind] = "down"
                 elif self.angle[ind] > self.up_angle:
                     self.stage[ind] = "up"
